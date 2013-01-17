@@ -1,0 +1,33 @@
+{
+  "name": "github-download",
+  "version": "0.0.1",
+  "description": "Easily download Github repos without dependencies such as Git, Tar, Unzip, etc.",
+  "homepage": [
+    ""
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": ["github", "repository", "repo", "download", "fetch", "git"],
+  "author": "JP Richardson <jprichardson@gmail.com>",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": ""
+    }
+  ],
+  "dependencies": {
+    "request": "~2.12.0",
+    "vcsurl": "~0.1.0"
+  },
+  "devDependencies": {
+    "testutil": "~0.3.0",
+    "fs-extra": "~0.3.2",
+    "mocha": "*"
+  },
+  "main": "./lib/github-download.js",
+  "scripts": {
+    "test": "mocha test"
+  }
+}
