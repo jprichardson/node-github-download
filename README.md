@@ -22,7 +22,7 @@ Usage
 
 ### ghdownload(params, dir)
 
-Downloads the latest copy of the `master` branch.
+Downloads the latest copy of the `master` branch. This will still work even if the Github API limit has been reached.
 
 - **params**: Can either be a Github URL string such as: `https://github.com/jprichardson/node-vcsurl.git`, `git@github.com:jprichardson/node-vcsurl.git`, or `git://github.com/jprichardson/node-vcsurl.git`. It can also be an object containing like so: `{user: 'jprichardson', repo: 'vcsurl'}`.
 - **dir**: The output directory. Uses the current working directory if nothing is specified.
@@ -41,6 +41,9 @@ ghdownload({user: 'jprichardson', repo: 'node-batchflow'}, process.cwd())
 })
 .on('file', function(file) {
   console.log(file)
+})
+.on('zip', function(zipUrl) { //only emitted if Github API limit is reached and the zip file is downloaded
+  console.log(zipUrl)
 })
 .on('error', function(err) {
   console.error(err)

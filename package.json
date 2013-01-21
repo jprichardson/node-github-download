@@ -1,6 +1,6 @@
 {
   "name": "github-download",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Easily download Github repos without dependencies such as Git, Tar, Unzip, etc.",
   "homepage": [
     ""
@@ -27,11 +27,11 @@
   "dependencies": {
     "request": "~2.12.0",
     "vcsurl": "~0.1.0",
-    "unzip": "~0.1.1"
+    "adm-zip": "~0.1.9",
+    "fs-extra": "~0.3.2"
   },
   "devDependencies": {
     "testutil": "~0.3.0",
-    "fs-extra": "~0.3.2",
     "mocha": "*",
     "nock": "~0.14.3"
   },
