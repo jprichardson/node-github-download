@@ -9,7 +9,14 @@
     "type": "git",
     "url": "git@github.com:jprichardson/node-github-download.git"
   },
-  "keywords": ["github", "repository", "repo", "download", "fetch", "git"],
+  "keywords": [
+    "github",
+    "repository",
+    "repo",
+    "download",
+    "fetch",
+    "git"
+  ],
   "author": "JP Richardson <jprichardson@gmail.com>",
   "licenses": [
     {
@@ -19,12 +26,14 @@
   ],
   "dependencies": {
     "request": "~2.12.0",
-    "vcsurl": "~0.1.0"
+    "vcsurl": "~0.1.0",
+    "unzip": "~0.1.1"
   },
   "devDependencies": {
     "testutil": "~0.3.0",
     "fs-extra": "~0.3.2",
-    "mocha": "*"
+    "mocha": "*",
+    "nock": "~0.14.3"
   },
   "main": "./lib/github-download.js",
   "scripts": {
