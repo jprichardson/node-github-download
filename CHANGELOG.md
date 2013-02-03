@@ -1,3 +1,7 @@
+0.1.1 / 2013-02-03
+------------------
+* Updated `fs-extra` dep.
+
 0.1.0 / 2013-01-21
 ------------------
 * Updated dependencies to include `adm-zip` and `fs-extra`.
