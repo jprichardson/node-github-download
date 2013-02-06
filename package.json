@@ -1,7 +1,7 @@
 {
   "name": "github-download",
   "version": "0.1.1",
-  "description": "Easily download Github repos without dependencies such as Git, Tar, Unzip, etc.",
+  "description": "The most reliable way to download Github repos. No external binary dependencies required.",
   "homepage": [
     ""
   ],
@@ -31,9 +31,10 @@
     "fs-extra": "~0.5.0"
   },
   "devDependencies": {
-    "testutil": "~0.3.0",
+    "testutil": "~0.4.0",
     "mocha": "*",
-    "nock": "~0.14.3"
+    "nock": "~0.14.3",
+    "autoresolve": "0.0.3"
   },
   "main": "./lib/github-download.js",
   "scripts": {
