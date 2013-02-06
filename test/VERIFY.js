@@ -1,6 +1,12 @@
+var path = require('path')
+  , fs = require('fs-extra')
+  , P = require('autoresolve')
+  , ghdownload = require(P('lib/github-download'))
+
+
 module.exports = VERIFY
 
-function VERIFY (outputDir, input, transportConfig done) {
+function VERIFY (input, outputDir, transportConfig, done) {
   var results = {}
 
   if (!fs.existsSync(outputDir)) {

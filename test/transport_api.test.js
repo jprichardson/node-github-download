@@ -20,8 +20,8 @@ describe('github-download', function() {
       var transportConfig = {
         order: ['api']
       }
-      var input = {user: 'jprichardson', repo: 'node-batchflow', t}
-      VERIFY(input, transportConfig, function(results) {
+      var input = {user: 'jprichardson', repo: 'node-batchflow'}
+      VERIFY(input, TEST_DIR, transportConfig, function(results) {
         F (results['zip'])
         F (results['git'])
         T (results['dir'])
@@ -49,7 +49,7 @@ describe('github-download', function() {
   describe.skip('> when input is git path Github repo', function() {
     it('should download the latest copy of master', function(done) {
       var input = 'git@github.com:jprichardson/node-batchflow.git'
-      VERIFY(input, )
+      VERIFY(input)
     })
   })
 

@@ -6,7 +6,7 @@ var ghdownload = require('../lib/github-download')
 
 var TEST_DIR = null
 
-describe('github-download', function() {
+describe.skip('github-download', function() {
   beforeEach(function() {
     if (fs.existsSync(TEST_DIR)) fs.removeSync(TEST_DIR)
     TEST_DIR = testutil.createTestDir('github-download')
