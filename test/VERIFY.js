@@ -31,7 +31,7 @@ function VERIFY (input, outputDir, transportConfig, done) {
   })
   .on('error', function(err) {
     if (!results['error']) results['error'] = []
-    results['err'].push(err)
+    results['error'].push(err)
   })
   .on('end', function(success) {
     results['success'] = success
@@ -55,7 +55,10 @@ function VERIFY (input, outputDir, transportConfig, done) {
     })
 
     //has some correct content
-    results['content'] = (fs.readFileSync(path.join(outputDir,'LICENSE'), 'utf8').indexOf('jprichardson@gmail.com') > 0)
+    var licenseFile = path.join(outputDir,'LICENSE')
+    results['content'] = fs.existsSync(licenseFile)
+    if (results['content'])
+      results['content'] = fs.readFileSync(licenseFile, 'utf8').indexOf('jprichardson@gmail.com') > 0
     
     setTimeout(function() {
       done(results) 
