@@ -1,3 +1,10 @@
+0.2.0 / 2013-04-29
+------------------
+* updated `fs-extra` dep
+* Node `v0.10` compatibility
+* fixed inheritance bug
+* add travis-ci
+
 0.1.1 / 2013-02-03
 ------------------
 * Updated `fs-extra` dep.

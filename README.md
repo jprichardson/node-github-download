@@ -1,13 +1,15 @@
 Node.js - github-download
 ================
 
-Easily download Github repos without dependencies such as Git, Tar, Unzip, etc.
+[![build status](https://secure.travis-ci.org/jprichardson/node-github-download.png)](http://travis-ci.org/jprichardson/node-github-download)
+
+Easily download Github repos without any external dependencies such as Git, Tar, Unzip, etc.
 
 
 Why?
 ----
 
-I really like the concept of managing user defined projects, repos, file structures (package management) on Github like the way that [Component](https://github.com/component) does package management. I have a package management system [Rock](https://github.com/rocktemplates) that I use to create skeleton/templates of projects. I wanted Rock to use the Github package management system. I also didn't want any dependencies amongst any 3rd party programs like Git, Tar, or Unzip. Pure Node.js JavaScript is what I wanted.
+I really like the concept of managing user defined projects, repos, file structures (package management) on Github like the way that [Component](https://github.com/component) does package management. I have a package management system [Rock](https://github.com/rocktemplates) that I use to create skeleton/templates of projects. I wanted Rock to use Github as a package management system. I also didn't want any dependencies amongst any 3rd party programs like Git, Tar, or Unzip. Pure Node.js JavaScript is what I wanted.
 
 
 Installation
