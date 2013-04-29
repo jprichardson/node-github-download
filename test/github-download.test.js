@@ -54,6 +54,7 @@ function TEST (outputDir, input, done) {
     , dirs = []
     , zip = null
 
+  //console.log('OD: ' + outputDir)
   if (!fs.existsSync(outputDir)) {
     fs.removeSync(outputDir)
     fs.mkdirsSync(outputDir)
@@ -83,6 +84,7 @@ function TEST (outputDir, input, done) {
 
     var items = []
 
+    //console.log('OD2: ' + outputDir)
     items = items.concat(fs.readdirSync(outputDir))
     items = items.concat(fs.readdirSync(path.join(outputDir, 'lib')))
     items = items.concat(fs.readdirSync(path.join(outputDir, 'test')))
@@ -102,7 +104,7 @@ function TEST (outputDir, input, done) {
     
     setTimeout(function() {
       done() 
-    },250)
+    },20)
   })
 }
 
