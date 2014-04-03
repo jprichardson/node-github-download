@@ -24,9 +24,15 @@ Usage
 
 ### ghdownload(params, dir)
 
-Downloads the latest copy of the `master` branch. This will still work even if the Github API limit has been reached.
+Downloads the latest copy of some Github reference (branch, tag, or commit), or the `master` branch by default (specifically the `master` branch, it does _not_ honor Github's default branch configuration). This will still work even if the Github API limit has been reached.
 
-- **params**: Can either be a Github URL string such as: `https://github.com/jprichardson/node-vcsurl.git`, `git@github.com:jprichardson/node-vcsurl.git`, or `git://github.com/jprichardson/node-vcsurl.git`. It can also be an object containing like so: `{user: 'jprichardson', repo: 'vcsurl'}`.
+- **params**: Can either be:
+     - a Github URL string such as:
+         - `https://github.com/jprichardson/node-vcsurl.git`
+         - `git@github.com:jprichardson/node-vcsurl.git`
+         - `git://github.com/jprichardson/node-vcsurl.git`
+         - and even including a reference, e.g. `https://github.com/jprichardson/node-vcsurl.git#master`
+     - or an object like so: `{user: 'jprichardson', repo: 'vcsurl', ref: 'master'}`
 - **dir**: The output directory. Uses the current working directory if nothing is specified.
 
 Returns a GithubDownloader object that emits events on `dir`, `file`, and `end`.
@@ -37,7 +43,7 @@ Example:
 var ghdownload = require('github-download')
   , exec = require('exec')
 
-ghdownload({user: 'jprichardson', repo: 'node-batchflow'}, process.cwd())
+ghdownload({user: 'jprichardson', repo: 'node-batchflow', ref: 'master'}, process.cwd())
 .on('dir', function(dir) {
   console.log(dir)
 })
