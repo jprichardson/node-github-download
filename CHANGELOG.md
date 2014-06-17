@@ -1,3 +1,9 @@
+0.3.0 / 2014-06-17
+------------------
+* downloads to a temp dir in `cwd()` instead of `/tmp` [#4](https://github.com/jprichardson/node-github-download/pull/4)
+* upgraded `"fs-extra": "~0.6.0"` to `"fs-extra": "^0.9.1"`
+* drop support for Node.js `v0.8`
+
 0.2.0 / 2013-04-29
 ------------------
 * updated `fs-extra` dep
