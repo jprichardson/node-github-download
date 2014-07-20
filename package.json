@@ -1,6 +1,6 @@
 {
   "name": "github-download",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Easily download Github repos without any external dependencies such as Git, Tar, Unzip, etc.",
   "homepage": [
     ""
