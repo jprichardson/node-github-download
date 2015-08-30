@@ -1,3 +1,7 @@
+0.4.0 / 2015-08-30
+------------------
+- JavaScript Standard Style http://standardjs.com
+
 0.3.0 / 2014-06-17
 ------------------
 * downloads to a temp dir in `cwd()` instead of `/tmp` [#4](https://github.com/jprichardson/node-github-download/pull/4)
