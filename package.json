@@ -25,10 +25,11 @@
   "devDependencies": {
     "testutil": "~0.5.0",
     "mocha": "*",
-    "nock": "~0.14.3"
+    "nock": "~0.14.3",
+    "standard": "5.x"
   },
   "main": "./lib/github-download.js",
   "scripts": {
-    "test": "mocha test"
+    "test": "standard && mocha test"
   }
 }
