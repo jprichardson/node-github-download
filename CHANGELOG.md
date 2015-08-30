@@ -1,6 +1,7 @@
 0.4.0 / 2015-08-30
 ------------------
 - JavaScript Standard Style http://standardjs.com
+- upgraded to `fs-extra@0.24.x`
 
 0.3.0 / 2014-06-17
 ------------------
