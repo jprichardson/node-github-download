@@ -15,12 +15,7 @@
     "git"
   ],
   "author": "JP Richardson <jprichardson@gmail.com>",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": ""
-    }
-  ],
+  "license": "MIT",
   "dependencies": {
     "adm-zip": "~0.4.3",
     "fs-extra": "^0.24.0",
