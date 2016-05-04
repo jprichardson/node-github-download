@@ -1,7 +1,7 @@
 Node.js - github-download
 ================
 
-[![build status](https://secure.travis-ci.org/jprichardson/node-github-download.png)](http://travis-ci.org/jprichardson/node-github-download)
+[![build status](https://secure.travis-ci.org/jprichardson/node-github-download.svg)](http://travis-ci.org/jprichardson/node-github-download)
 
 Easily download Github repos without any external dependencies such as Git, Tar, Unzip, etc.
 
@@ -91,6 +91,4 @@ License
 
 (MIT License)
 
-Copyright 2013, JP Richardson  <jprichardson@gmail.com>
-
-
+Copyright 2013-2016, JP Richardson  <jprichardson@gmail.com>
