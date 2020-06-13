@@ -83,12 +83,12 @@ function TEST (outputDir, input, done) {
         T(dirs.length >= 2)
       }
 
-      var items = []
+      // var items = []
 
       // console.log('OD2: ' + outputDir)
-      items = items.concat(fs.readdirSync(outputDir))
-      items = items.concat(fs.readdirSync(path.join(outputDir, 'lib')))
-      items = items.concat(fs.readdirSync(path.join(outputDir, 'test')))
+      // items = items.concat(fs.readdirSync(outputDir))
+      // items = items.concat(fs.readdirSync(path.join(outputDir, 'lib')))
+      // items = items.concat(fs.readdirSync(path.join(outputDir, 'test')))
       // console.dir(items)
 
       T(fs.existsSync(path.join(outputDir, '.gitignore')))
