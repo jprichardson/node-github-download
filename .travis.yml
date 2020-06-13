@@ -1,16 +1,19 @@
 sudo: false
 language: node_js
 node_js:
-  - "0.10"
-  - "0.12"
-  - "io.js"
-  - "4"
-  - "5"
-  - "6"
+  - "8"
+  - "9"
+  - "10"
+  - "lts/*"
+  - "node"
 matrix:
   include:
-    - node_js: "4"
+    - node_js: "node"
       env: TEST_SUITE=lint
 env:
   - TEST_SUITE=unit
 script: npm run-script $TEST_SUITE
+os:
+  - linux
+  - osx
+  - windows
